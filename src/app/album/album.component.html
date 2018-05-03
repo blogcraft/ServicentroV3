@@ -1,0 +1,10 @@
+<div>
+    <mat-grid-list cols='2'>
+        <mat-grid-tile *ngFor="let album of albums">
+            <mat-card>
+                <mat-card-header>{{album.nombre}}</mat-card-header>
+                <img src={{album.imagen}} alt={{album.nombre}}>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "Kilómetro 1",
+        "lanzamiento": "2017-05-01",
+        "tipo": "Álbum",
+        "imagen": "assets/img/albums/Kilómetro 1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Construyamos Esperanza",
+        "lanzamiento": "2017-10-24",
+        "tipo": "Sencillo",
+        "imagen": "assets/img/albums/Construyamos Esperanza.jpg"
+    }
+]
