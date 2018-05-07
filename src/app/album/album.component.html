@@ -1,9 +1,13 @@
 <div>
     <mat-grid-list cols='2'>
-        <mat-grid-tile *ngFor="let album of albums">
+        <mat-grid-tile>
             <mat-card>
-                <mat-card-header>{{album.nombre}}</mat-card-header>
-                <img src={{album.imagen}} alt={{album.nombre}}>
+                <mat-card-header routerLink='kilometro-1'>Kilómetro 1</mat-card-header>
+                <img src='assets/img/albums/Kilómetro 1.jpg' alt='Kilómetro 1'>
+            </mat-card>
+            <mat-card>
+                <mat-card-header routerLink='construyamos-esperanza'>Construyamos Esperanza</mat-card-header>
+                <img src='assets/img/albums/Construyamos Esperanza.jpg' alt='Construyamos Esperanza'>
             </mat-card>
         </mat-grid-tile>
     </mat-grid-list>

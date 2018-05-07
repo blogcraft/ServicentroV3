@@ -3,10 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AlbumComponent } from './album/album.component';
 import { HomeComponent } from './home/home.component';
+import { Kilometro1Component } from './album/kilometro-1/kilometro-1.component';
+import { ConstruyamosEsperanzaComponent } from './album/construyamos-esperanza/construyamos-esperanza.component';
 
 const routes: Routes = [
   { path:'', component: HomeComponent},
-  { path: 'albums', component: AlbumComponent }
+  { path: 'albums', component: AlbumComponent },
+  { path: 'albums/kilometro-1', component: Kilometro1Component },
+  { path: 'albums/construyamos-esperanza', component: ConstruyamosEsperanzaComponent }
 ];
 
 @NgModule({
