@@ -1,14 +1,18 @@
-<div>
-    <mat-grid-list cols='2'>
-        <mat-grid-tile>
-            <mat-card>
-                <mat-card-header routerLink='kilometro-1'>Kilómetro 1</mat-card-header>
-                <img src='assets/img/albums/Kilómetro 1.jpg' alt='Kilómetro 1'>
-            </mat-card>
-            <mat-card>
-                <mat-card-header routerLink='construyamos-esperanza'>Construyamos Esperanza</mat-card-header>
-                <img src='assets/img/albums/Construyamos Esperanza.jpg' alt='Construyamos Esperanza'>
-            </mat-card>
-        </mat-grid-tile>
-    </mat-grid-list>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-evenly center">
+    <div fxFlex.gt-sm="50%" fxFlex.lt-md="100%">
+        <mat-card>
+            <mat-card-header routerLink='kilometro-1'>
+                <mat-card-title>Kilómetro 1</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src='assets/img/albums/Kilómetro 1.jpg' alt='Kilómetro 1'>
+        </mat-card>
+    </div>
+    <div fxFlex.gt-sm="50%" fxFlex.lt-md="100%">
+        <mat-card>
+            <mat-card-header routerLink='construyamos-esperanza'>
+                <mat-card-title>Construyamos Esperanza</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src='assets/img/albums/Construyamos Esperanza.jpg' alt='Construyamos Esperanza'>
+        </mat-card>
+    </div>
 </div>

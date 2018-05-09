@@ -1,6 +1,6 @@
 <div style="height: 100vh;">
     <mat-toolbar color="primary">
-        <span routerLink='/'>Servicentro</span>
+        <span routerLink='/' class="titulo">X-sitio</span>
         <span fxFlex></span>
         <div fxShow="true" fxHide.gt-sm="true">
             <button mat-button (click)="sidenav.toggle()">Show Side Menu</button>
@@ -8,7 +8,7 @@
         <div fxShow="true" fxHide.lt-md="true">
             <button mat-button fxFlex="auto">Conócenos</button>
             <button mat-button fxFlex="auto" routerLink='albums'>Música</button>
-            <button mat-button fxFlex="auto">Media</button>
+            <button mat-button fxFlex="auto" routerLink='media'>Media</button>
             <button mat-button fxFlex="auto">Contacto</button>
         </div>
     </mat-toolbar>
@@ -18,7 +18,7 @@
                 <button mat-button (click)="sidenav.toggle()">Close</button>
                 <button mat-button>Conócenos</button>
                 <button mat-button routerLink='albums'>Música</button>
-                <button mat-button>Media</button>
+                <button mat-button routerLink='media'>Media</button>
                 <button mat-button>Contacto</button>
             </div>
         </mat-sidenav>

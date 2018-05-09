@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~normalize.css/normalize.css';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+@font-face {
+    font-family: 'Magneto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Magneto'), local('Magneto'), url('assets/fonts/magnetob.svg') format('svg'),url('assets/fonts/magnetob.woff') format('woff'), url('assets/fonts/magnetob.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CaptureIt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('CaptureIt'), local('CaptureIt'), url('assets/fonts/captureIt.ttf') format('truetype');
+}
