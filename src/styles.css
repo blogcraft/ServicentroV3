@@ -15,3 +15,7 @@
     font-weight: 400;
     src: local('CaptureIt'), local('CaptureIt'), url('assets/fonts/captureIt.ttf') format('truetype');
 }
+
+mat-card {
+    margin-bottom: 20px;
+}

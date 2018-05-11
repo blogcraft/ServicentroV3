@@ -1,18 +1,35 @@
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-evenly center">
-    <div fxFlex.gt-sm="50%" fxFlex.lt-md="100%">
+    <div>
         <mat-card>
-            <mat-card-header routerLink='kilometro-1'>
+            <mat-card-header>
                 <mat-card-title>Kilómetro 1</mat-card-title>
             </mat-card-header>
             <img mat-card-image src='assets/img/albums/Kilómetro 1.jpg' alt='Kilómetro 1'>
+            <mat-card-actions>
+                <button mat-button routerLink='kilometro-1'>Ver</button>
+            </mat-card-actions>
         </mat-card>
     </div>
-    <div fxFlex.gt-sm="50%" fxFlex.lt-md="100%">
+    <div>
         <mat-card>
-            <mat-card-header routerLink='construyamos-esperanza'>
+            <mat-card-header>
                 <mat-card-title>Construyamos Esperanza</mat-card-title>
             </mat-card-header>
             <img mat-card-image src='assets/img/albums/Construyamos Esperanza.jpg' alt='Construyamos Esperanza'>
+            <mat-card-actions>
+                <button mat-button routerLink='construyamos-esperanza'>VER</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <div>
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Otros</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src='favicon.ico' alt='Otros'>
+            <mat-card-actions>
+                <button mat-button routerLink='otros'>VER</button>
+            </mat-card-actions>
         </mat-card>
     </div>
 </div>
