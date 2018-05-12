@@ -7,6 +7,7 @@ import { Kilometro1Component } from './album/kilometro-1/kilometro-1.component';
 import { ConstruyamosEsperanzaComponent } from './album/construyamos-esperanza/construyamos-esperanza.component';
 import { MediaComponent } from './media/media.component';
 import { OtrosComponent } from './album/otros/otros.component';
+import { GaleriaComponent } from './media/galeria/galeria.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'albums/kilometro-1', component: Kilometro1Component },
   { path: 'albums/construyamos-esperanza', component: ConstruyamosEsperanzaComponent },
   { path: 'albums/otros', component: OtrosComponent },
-  { path: 'media', component: MediaComponent }
+  { path: 'media', component: MediaComponent },
+  { path: 'media/:id', component: GaleriaComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,5 @@
+<div *ngIf="galeria">
+    <div *ngFor="let foto of galeria.fotos">
+        <img (click)="openDialog(foto)" src='assets/img/galerias/{{galeria.ano}}{{galeria.nombre}}/Servicentro-{{galeria.ano}}-{{galeria.nombre}}-{{foto}}.jpg'>
+    </div>
+</div>

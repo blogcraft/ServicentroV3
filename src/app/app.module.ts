@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatIconModule, MatIconRegistry, MatExpansionModule } from '@angular/material';
+import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule } from '@angular/material';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { Kilometro1Component } from './album/kilometro-1/kilometro-1.component';
 import { ConstruyamosEsperanzaComponent } from './album/construyamos-esperanza/construyamos-esperanza.component';
 import { OtrosComponent } from './album/otros/otros.component';
+import { GaleriaComponent, DialogFoto } from './media/galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { OtrosComponent } from './album/otros/otros.component';
     AlbumComponent,
     Kilometro1Component,
     ConstruyamosEsperanzaComponent,
-    OtrosComponent
+    OtrosComponent,
+    GaleriaComponent,
+    DialogFoto
   ],
   imports: [
     BrowserModule,
@@ -46,10 +49,12 @@ import { OtrosComponent } from './album/otros/otros.component';
     MatTooltipModule,
     MatIconModule,
     MatExpansionModule,
+    MatDialogModule,
     HttpClientModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     AppRoutingModule
   ],
+  entryComponents: [DialogFoto],
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
 })

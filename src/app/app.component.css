@@ -5,3 +5,9 @@ mat-sidenav-content {
 .titulo {
     font-family: 'Magneto';
 }
+
+.p-1{
+    padding: 1rem;
+    /* margin: auto; */
+    text-align: center;
+}
