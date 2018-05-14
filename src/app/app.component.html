@@ -1,10 +1,10 @@
 <div class="mat-typography">
     <ngx-json-ld [json]="schema"></ngx-json-ld>
     <mat-toolbar color="primary">
-        <h1 routerLink='/' class="titulo">X<span class="logo-rojo">~</span>sitio</h1>
+        <h1 routerLink='/' class="titulo">Servi<span class="logo-rojo">c</span>entro</h1>
         <span fxFlex></span>
         <div fxShow="true" fxHide.gt-sm="true">
-            <button mat-button (click)="sidenav.toggle()">Show Side Menu</button>
+            <button mat-button (click)="sidenav.toggle()">Menú</button>
         </div>
         <div fxShow="true" fxHide.lt-md="true">
             <button mat-button fxFlex="auto">Conócenos</button>
@@ -28,7 +28,7 @@
         </mat-sidenav-content>
     </mat-sidenav-container>
     <footer>
-        <div fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-evenly center">
+        <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutAlign="space-evenly center">
             <div fxFlex.gt-sm="33%" class="p-1">
                 <span class="copyright" matTooltip="Music: BY-NC-ND. Images and Album Cover Art: BY" matTooltipPosition="right">
                     <mat-icon fontSet="fa" fontIcon="fa-creative-commons"></mat-icon> Servicentro 2018</span>

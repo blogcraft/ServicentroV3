@@ -1,3 +1,7 @@
+mat-toolbar {
+    background: linear-gradient(#1d465a, #1d5365, #597882, #7c8f90, #a29a8c) !important;
+}
+
 mat-sidenav-content {
     padding: 1rem !important;
 }
