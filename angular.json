@@ -19,17 +19,7 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "src/manifest.json",
-              {
-                "glob": "index.js",
-                "input": "./server/",
-                "output": "./"
-              },
-              {
-                "glob": "package.json",
-                "input": "./server/",
-                "output": "./"
-              }
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css",
