@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Galeria } from "../galeria";
 import { Observable } from "rxjs";
+import { Galeria } from "./galeria";
 
 @Injectable()
 export class MediaService {
