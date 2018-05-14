@@ -1,7 +1,13 @@
+<ngx-json-ld [json]="schema"></ngx-json-ld>
 <div fxLayout="column" fxLayoutAlign="space-evenly center">
     <mat-card fxFlex.gt-sm="50%">
         <mat-card-header>
-            <img mat-card-avatar src='assets/img/albums/Construyamos Esperanza.jpg' alt='Kilómetro 1'>
+            <picture mat-card-avatar>
+                <source type="image/webp" srcset="assets/img/albums/ConstruyamosEsperanza.webp">
+                <source type="image/jp2" srcset="assets/img/albums/ConstruyamosEsperanza.jp2">
+                <source type="image/jxr" srcset="assets/img/albums/ConstruyamosEsperanza.jxr">
+                <img mat-card-avatar src='assets/img/albums/ConstruyamosEsperanza.jpg' alt='Construyamos Esperanza'>
+            </picture>
             <mat-card-title>Construyamos Esperanza</mat-card-title>
             <mat-card-subtitle>2017</mat-card-subtitle>
         </mat-card-header>

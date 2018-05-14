@@ -11,3 +11,17 @@ mat-sidenav-content {
     /* margin: auto; */
     text-align: center;
 }
+
+.ruedita {
+    background-color: #222;
+    border-radius: 100%;
+    color: #fff;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0 .2rem 0 .2rem;
+}
+
+.logo-rojo {
+    color: rgb(var(--RojoServicentro));
+}

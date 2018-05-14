@@ -1,58 +1,62 @@
-<mat-toolbar color="primary">
-    <span routerLink='/' class="titulo">X-sitio</span>
-    <span fxFlex></span>
-    <div fxShow="true" fxHide.gt-sm="true">
-        <button mat-button (click)="sidenav.toggle()">Show Side Menu</button>
-    </div>
-    <div fxShow="true" fxHide.lt-md="true">
-        <button mat-button fxFlex="auto">Conócenos</button>
-        <button mat-button fxFlex="auto" routerLink='albums'>Música</button>
-        <button mat-button fxFlex="auto" routerLink='media'>Media</button>
-        <button mat-button fxFlex="auto">Contacto</button>
-    </div>
-</mat-toolbar>
-<mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav fxLayout="column">
-        <div fxLayout="column">
-            <button mat-button (click)="sidenav.toggle()">Close</button>
-            <button mat-button>Conócenos</button>
-            <button mat-button routerLink='albums'>Música</button>
-            <button mat-button routerLink='media'>Media</button>
-            <button mat-button>Contacto</button>
+<div class="mat-typography">
+    <ngx-json-ld [json]="schema"></ngx-json-ld>
+    <mat-toolbar color="primary">
+        <h1 routerLink='/' class="titulo">X<span class="logo-rojo">~</span>sitio</h1>
+        <span fxFlex></span>
+        <div fxShow="true" fxHide.gt-sm="true">
+            <button mat-button (click)="sidenav.toggle()">Show Side Menu</button>
         </div>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
-</mat-sidenav-container>
-<footer>
-    <div fxLayout="row" fxLayoutAlign="space-evenly center">
-        <div fxFlex.gt-xs="33%" class="p-1">
-            <span class="copyright" matTooltip="Music: BY-NC-ND. Images and Album Cover Art: BY" matTooltipPosition="right">
-                <mat-icon fontSet="fa" fontIcon="fa-creative-commons"></mat-icon> Servicentro 2018</span>
+        <div fxShow="true" fxHide.lt-md="true">
+            <button mat-button fxFlex="auto">Conócenos</button>
+            <button mat-button fxFlex="auto" routerLink='albums'>Música</button>
+            <button mat-button fxFlex="auto" routerLink='media'>Media</button>
+            <button mat-button fxFlex="auto">Contacto</button>
         </div>
-        <div fxFlex.gt-xs="33%" class="p-1">
-            <a href="//plus.google.com/108680490166455718892/posts" alt="Google+ Servicentro">
-                <mat-icon fontSet="fa" fontIcon="fa-google-plus"></mat-icon>
-            </a>
-            <a href="//www.facebook.com/Servicentrocl/" alt="Facebok Servicentro">
-                <mat-icon fontSet="fa" fontIcon="fa-facebook"></mat-icon>
-            </a>
-            <a href="//www.youtube.com/watch?v=0KNsVDvubm8" alt="Youtube Servicentro">
-                <mat-icon fontSet="fa" fontIcon="fa-youtube"></mat-icon>
-            </a>
-            <a href="//open.spotify.com/album/11Y5PkMkyJxPxeMQq8ZudQ" alt="Spotify Servicentro">
-                <mat-icon fontSet="fa" fontIcon="fa-spotify"></mat-icon>
-            </a>
-            <a href="//itunes.apple.com/cl/album/kil%C3%B3metro-1/id1237982511" alt="Apple Music Servicentro">
-                <mat-icon fontSet="fa" fontIcon="fa-apple"></mat-icon>
-            </a>
-            <a href="//play.google.com/store/music/album/Servicentro_Kil%C3%B3metro_1?id=B3vgabl5w7w34pmhliddv2mly74" alt="Google Play Servicentro">
-                <mat-icon fontSet="fa" fontIcon="fa-play"></mat-icon>
-            </a>
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill>
+        <mat-sidenav #sidenav fxLayout="column">
+            <div fxLayout="column">
+                <button mat-button (click)="sidenav.toggle()">Cerrar</button>
+                <button mat-button>Conócenos</button>
+                <button mat-button routerLink='albums'>Música</button>
+                <button mat-button routerLink='media'>Media</button>
+                <button mat-button>Contacto</button>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+    <footer>
+        <div fxLayout="row" fxLayout.sm="column" fxLayoutAlign="space-evenly center">
+            <div fxFlex.gt-sm="33%" class="p-1">
+                <span class="copyright" matTooltip="Music: BY-NC-ND. Images and Album Cover Art: BY" matTooltipPosition="right">
+                    <mat-icon fontSet="fa" fontIcon="fa-creative-commons"></mat-icon> Servicentro 2018</span>
+            </div>
+            <div fxFlex.gt-xs="33%" class="p-1">
+                <a class="ruedita" href="//plus.google.com/108680490166455718892/posts" alt="Google+ Servicentro">
+                    <mat-icon fontSet="fa" fontIcon="fa-google-plus"></mat-icon>
+                </a>
+                <a class="ruedita" href="//www.facebook.com/Servicentrocl/" alt="Facebok Servicentro">
+                    <mat-icon fontSet="fa" fontIcon="fa-facebook"></mat-icon>
+                </a>
+                <a class="ruedita" href="//www.youtube.com/watch?v=0KNsVDvubm8" alt="Youtube Servicentro">
+                    <mat-icon fontSet="fa" fontIcon="fa-youtube"></mat-icon>
+                </a>
+                <a class="ruedita" href="//open.spotify.com/album/11Y5PkMkyJxPxeMQq8ZudQ" alt="Spotify Servicentro">
+                    <mat-icon fontSet="fa" fontIcon="fa-spotify"></mat-icon>
+                </a>
+                <a class="ruedita" href="//itunes.apple.com/cl/album/kil%C3%B3metro-1/id1237982511" alt="Apple Music Servicentro">
+                    <mat-icon fontSet="fa" fontIcon="fa-apple"></mat-icon>
+                </a>
+                <a class="ruedita" href="//play.google.com/store/music/album/Servicentro_Kil%C3%B3metro_1?id=B3vgabl5w7w34pmhliddv2mly74"
+                    alt="Google Play Servicentro">
+                    <mat-icon fontSet="fa" fontIcon="fa-play"></mat-icon>
+                </a>
+            </div>
+            <div fxFlex.gt-xs="33%" class="p-1">
+                <a href="mailto:contacto@servicentro.cl">contacto@servicentro.cl</a>
+            </div>
         </div>
-        <div fxFlex.gt-xs="33%" class="p-1">
-            <a href="mailto:contacto@servicentro.cl">contacto@servicentro.cl</a>
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>

@@ -4,15 +4,10 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule } from '@angular/material';
+import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule } from '@angular/material';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { NgxJsonLdModule } from 'ngx-json-ld';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
@@ -24,6 +19,8 @@ import { Kilometro1Component } from './album/kilometro-1/kilometro-1.component';
 import { ConstruyamosEsperanzaComponent } from './album/construyamos-esperanza/construyamos-esperanza.component';
 import { OtrosComponent } from './album/otros/otros.component';
 import { GaleriaComponent, DialogFoto } from './media/galeria/galeria.component';
+import { FotosComponent } from './media/fotos/fotos.component';
+import { VideosComponent } from './media/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +31,8 @@ import { GaleriaComponent, DialogFoto } from './media/galeria/galeria.component'
     Kilometro1Component,
     ConstruyamosEsperanzaComponent,
     OtrosComponent,
+    FotosComponent,
+    VideosComponent,
     GaleriaComponent,
     DialogFoto
   ],
@@ -51,6 +50,8 @@ import { GaleriaComponent, DialogFoto } from './media/galeria/galeria.component'
     MatExpansionModule,
     MatDialogModule,
     HttpClientModule,
+    NgxJsonLdModule,
+    MatTabsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     AppRoutingModule
   ],

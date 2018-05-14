@@ -1,22 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Galeria } from '../galeria';
-import { MediaService } from './media.service';
 
 @Component({
   selector: 'app-media',
   templateUrl: './media.component.html',
-  styleUrls: ['./media.component.css'],
-  providers: [MediaService]
+  styleUrls: ['./media.component.css']
 })
 export class MediaComponent implements OnInit {
-  galerias: Galeria[];
 
-  constructor(private mediaService: MediaService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.mediaService.getGalerias().subscribe((galeria) => {
-      this.galerias = galeria;
-    });
   }
 
 }
