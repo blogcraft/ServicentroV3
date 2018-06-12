@@ -23,3 +23,19 @@ mat-card {
     --RojoServicentro: 243, 41, 39;
     --AzulServicentro: 48, 46, 122;
 }
+
+[mr-10] {
+    margin-right: 10px;
+}
+
+[mb-20] {
+    margin-bottom: 20px;
+}
+
+[m-10] {
+    margin: 10px;
+}
+
+[m-5] {
+    margin: 5px
+}

@@ -20,7 +20,7 @@ import { ConstruyamosEsperanzaComponent } from './album/construyamos-esperanza/c
 import { OtrosComponent } from './album/otros/otros.component';
 import { GaleriaComponent, DialogFoto } from './media/galeria/galeria.component';
 import { FotosComponent } from './media/fotos/fotos.component';
-import { VideosComponent } from './media/videos/videos.component';
+import { VideosComponent, SafePipe } from './media/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { VideosComponent } from './media/videos/videos.component';
     ConstruyamosEsperanzaComponent,
     OtrosComponent,
     FotosComponent,
-    VideosComponent,
+    VideosComponent, SafePipe,
     GaleriaComponent,
     DialogFoto
   ],

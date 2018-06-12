@@ -1,15 +1,4 @@
-<h1>Some more tab content</h1>
-<div fxLayout="row wrap" fxLayoutGap="0px" fxLayout.xs="column">
-    <iframe height="300px" fxFlex.gt-sm="calc(25% - 0px)" fxFlex.lt-md="calc(50% - 0px)" src="https://www.youtube.com/embed/E0cHvNSsINg?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe height="300px" fxFlex.gt-sm="calc(25% - 0px)" fxFlex.lt-md="calc(50% - 0px)" src="https://www.youtube.com/embed/McL_HEjgo7Q?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe height="300px" fxFlex.gt-sm="calc(25% - 0px)" fxFlex.lt-md="calc(50% - 0px)" src="https://www.youtube.com/embed/8Kxdy7_7gO0?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe height="300px" fxFlex.gt-sm="calc(25% - 0px)" fxFlex.lt-md="calc(50% - 0px)" src="https://www.youtube.com/embed/PGRCQo11hDE?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe height="300px" fxFlex.gt-sm="calc(25% - 0px)" fxFlex.lt-md="calc(50% - 0px)" src="https://www.youtube.com/embed/z1W8JRVVqNU?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe height="300px" fxFlex.gt-sm="calc(25% - 0px)" fxFlex.lt-md="calc(50% - 0px)" src="https://www.youtube.com/embed/_EKQqzKMUIs?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div m-5 fxLayout="column" fxLayout.gt-sm="row wrap" >
+    <iframe m-5 mb-20 *ngFor="let video of videos" height="300px" fxFlex.gt-sm="calc(50% - 10px)" [src]="video.src | safe" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>

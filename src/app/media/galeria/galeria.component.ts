@@ -19,7 +19,7 @@ export class GaleriaComponent implements OnInit {
         const id = +this.route.snapshot.paramMap.get('id');
         this.mediaService.getGalerias().subscribe((galerias) => {
             this.galeria = galerias.find(z => z.id == id);
-        })
+        });
     }
 
     openDialog(id) {
