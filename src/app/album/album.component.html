@@ -1,3 +1,4 @@
+<app-header [nombre]="pagina"></app-header>
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-evenly center">
     <div>
         <mat-card>
@@ -11,7 +12,7 @@
                 <img mat-card-image src='assets/img/albums/Kilometro1.jpg' alt='Kilómetro 1'>
             </picture>
             <mat-card-actions>
-                <button mat-button routerLink='kilometro-1'>Ver</button>
+                <button mat-raised-button color="primary" routerLink='kilometro-1'>VER</button>
             </mat-card-actions>
         </mat-card>
     </div>
@@ -27,7 +28,7 @@
                 <img mat-card-image src='assets/img/albums/ConstruyamosEsperanza.jpg' alt='Construyamos Esperanza'>
             </picture>
             <mat-card-actions>
-                <button mat-button routerLink='construyamos-esperanza'>VER</button>
+                <button mat-raised-button color="primary" routerLink='construyamos-esperanza'>VER</button>
             </mat-card-actions>
         </mat-card>
     </div>
@@ -38,7 +39,7 @@
             </mat-card-header>
             <img mat-card-image src='favicon.ico' alt='Otros'>
             <mat-card-actions>
-                <button mat-button routerLink='otros'>VER</button>
+                <button mat-raised-button color="primary" routerLink='otros'>VER</button>
             </mat-card-actions>
         </mat-card>
     </div>

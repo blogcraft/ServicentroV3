@@ -21,6 +21,9 @@ import { OtrosComponent } from './album/otros/otros.component';
 import { GaleriaComponent, DialogFoto } from './media/galeria/galeria.component';
 import { FotosComponent } from './media/fotos/fotos.component';
 import { VideosComponent, SafePipe } from './media/videos/videos.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { BiografiaComponent } from './biografia/biografia.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { VideosComponent, SafePipe } from './media/videos/videos.component';
     FotosComponent,
     VideosComponent, SafePipe,
     GaleriaComponent,
-    DialogFoto
+    BiografiaComponent,
+    DialogFoto,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

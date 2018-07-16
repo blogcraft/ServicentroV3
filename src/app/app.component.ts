@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  darkTheme: boolean = false;
   schema = {
     "@context": "http://schema.org",
     "@id": "kg:/g/11df0pfn6m",

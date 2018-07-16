@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlbumService } from './album.service';
 import { Album } from '../album';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-album',
@@ -10,13 +11,18 @@ import { Album } from '../album';
 })
 export class AlbumComponent implements OnInit {
   albums: Album[];
+  pagina: string;
 
-  constructor(private service: AlbumService) { }
+  constructor(private service: AlbumService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.service.getAlbums().subscribe((albums) => {
       this.albums = albums;
-    })
+    });
+    this.route.data
+      .subscribe((data: { pagina: string }) => {
+        this.pagina = data.pagina;
+      });
   }
 
 }

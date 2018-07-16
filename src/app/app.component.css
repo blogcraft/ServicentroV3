@@ -1,13 +1,10 @@
-mat-toolbar {
-    background: linear-gradient(#1d465a, #1d5365, #597882, #7c8f90, #a29a8c) !important;
-}
-
-mat-sidenav-content {
-    padding: 1rem !important;
+.gradient {
+    background: linear-gradient(#03455f, #155872, #306a80, #487787, #718c93, #9d9181) !important;
 }
 
 .titulo {
     font-family: 'Magneto';
+    font-size: 20px;
 }
 
 .p-1{
@@ -28,4 +25,11 @@ mat-sidenav-content {
 
 .logo-rojo {
     color: rgb(var(--RojoServicentro));
+}
+mat-sidenav-content{
+    display: flex;
+    flex-direction: column;
+}
+section {
+    flex-grow: 1;
 }

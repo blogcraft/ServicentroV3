@@ -8,15 +8,17 @@ import { ConstruyamosEsperanzaComponent } from './album/construyamos-esperanza/c
 import { MediaComponent } from './media/media.component';
 import { OtrosComponent } from './album/otros/otros.component';
 import { GaleriaComponent } from './media/galeria/galeria.component';
+import { BiografiaComponent } from './biografia/biografia.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'albums', component: AlbumComponent },
-  { path: 'albums/kilometro-1', component: Kilometro1Component },
-  { path: 'albums/construyamos-esperanza', component: ConstruyamosEsperanzaComponent },
-  { path: 'albums/otros', component: OtrosComponent },
-  { path: 'media', component: MediaComponent },
-  { path: 'media/:id', component: GaleriaComponent }
+  { path: '', component: HomeComponent, data: {pagina: 'Inicio'} },
+  { path: 'albums', component: AlbumComponent, data: {pagina: 'Música'} },
+  { path: 'biografia', component: BiografiaComponent, data: {pagina: 'Biografía'} },
+  { path: 'albums/kilometro-1', component: Kilometro1Component, data: {pagina: 'Álbum - Kilómetro 1'} },
+  { path: 'albums/construyamos-esperanza', component: ConstruyamosEsperanzaComponent, data: {pagina: 'Álbum - Construyamos Esperanza'} },
+  { path: 'albums/otros', component: OtrosComponent, data: {pagina: 'Otros'} },
+  { path: 'media', component: MediaComponent, data: {pagina: 'Media'} },
+  { path: 'media/:id', component: GaleriaComponent, data: {pagina: 'Galería'} }
 ];
 
 @NgModule({
