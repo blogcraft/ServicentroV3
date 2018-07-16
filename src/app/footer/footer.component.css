@@ -6,6 +6,6 @@ mat-icon {
     text-align: center;
 }
 
-button + button {
+a + a {
     margin-left: 15px;
 }

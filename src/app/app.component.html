@@ -12,12 +12,16 @@
         <mat-sidenav-content>
             <mat-toolbar color="primary">
                 <mat-toolbar-row class="mat-elevation-z24" style="z-index: 10;">
+                    <div fxShow="true" fxHide.gt-sm="true">
+                        <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menú">
+                            <mat-icon>menu</mat-icon>
+                        </button>
+                    </div>
                     <button mat-button>
                         <h1 routerLink='/' class="titulo">Servi<span class="logo-rojo">c</span>entro</h1>
                     </button>
                     <span fxFlex></span>
                     <div fxShow="true" fxHide.gt-sm="true">
-                        <button mat-button (click)="sidenav.toggle()">Menú</button>
                         <button mat-icon-button fxFlex="auto" (click)="darkTheme=!darkTheme">
                             <mat-icon>format_color_fill</mat-icon>
                         </button>
