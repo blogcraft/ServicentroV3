@@ -1,3 +1,5 @@
 export class Video {
-    src: string;
+    nombre: string;
+    sub: string;
+    youtubeId: string;
 }

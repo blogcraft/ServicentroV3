@@ -2,31 +2,31 @@
     {
         "nombre": "Mall De Las Almas",
         "sub": "2017",
-        "src": "https://www.youtube.com/embed/z1W8JRVVqNU?rel=0&amp;controls=0&amp;showinfo=0"
+        "youtubeId": "z1W8JRVVqNU"
     },
     {
         "nombre": "Construyamos Esperanza",
         "sub": "2017",
-        "src": "https://www.youtube.com/embed/8Kxdy7_7gO0?rel=0&amp;controls=0&amp;showinfo=0"
+        "youtubeId": "8Kxdy7_7gO0"
     },
     {
         "nombre": "Con Amor",
         "sub": "2017",
-        "src": "https://www.youtube.com/embed/PGRCQo11hDE?rel=0&amp;controls=0&amp;showinfo=0"
+        "youtubeId": "PGRCQo11hDE"
     },
     {
         "nombre": "Yo Le Diré",
         "sub": "2017",
-        "src": "https://www.youtube.com/embed/_EKQqzKMUIs?rel=0&amp;controls=0&amp;showinfo=0"
+        "youtubeId": "_EKQqzKMUIs"
     },
     {
         "nombre": "La Pataleta (En Vivo)",
         "sub": "Agosto 2017",
-        "src": "https://www.youtube.com/embed/E0cHvNSsINg?rel=0&amp;controls=0&amp;showinfo=0"
+        "youtubeId": "E0cHvNSsINg"
     },
     {
         "nombre": "Construyamos Esperanza (En Vivo)",
         "sub": "Noviembre 2017",
-        "src": "https://www.youtube.com/embed/McL_HEjgo7Q?rel=0&amp;controls=0&amp;showinfo=0"
+        "youtubeId": "McL_HEjgo7Q"
     }
 ]

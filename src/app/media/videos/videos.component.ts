@@ -5,10 +5,10 @@ import { Video } from "../video";
 
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
-  constructor(private sanitizer: DomSanitizer) { }
-  transform(url) {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
-  }
+    constructor(private sanitizer: DomSanitizer) { }
+    transform(url) {
+        return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    }
 }
 
 @Component({
@@ -21,9 +21,13 @@ export class VideosComponent implements OnInit {
 
     constructor(private mediaService: MediaService) { }
 
-    ngOnInit() {        
+    ngOnInit() {
         this.mediaService.getVideos().subscribe((videos) => {
-        this.videos = videos;
-    });
-}
+            this.videos = videos;
+        });
+    }
+
+    getURL(id){
+        return `https://www.youtube.com/embed/${id}?rel=0&controls=2&showinfo=0&modestbranding=0&cc_load_policy=1`
+    }
 }
