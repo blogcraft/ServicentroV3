@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule, MatListModule } from '@angular/material';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -45,6 +47,7 @@ import { BiografiaComponent } from './biografia/biografia.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     FlexLayoutModule,
     MatToolbarModule,
     MatSidenavModule,

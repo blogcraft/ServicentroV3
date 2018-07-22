@@ -24,26 +24,7 @@ $custom-typography: mat-typography-config(
     @include angular-material-theme($servicentro-dark-theme);
 }
 
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Roboto'), local('Roboto'), url('assets/fonts/Roboto-Light.ttf') format('truetype');
-}
 
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto'), url('assets/fonts/Roboto-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Roboto'), local('Roboto'), url('assets/fonts/Roboto-Medium.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'Magneto';

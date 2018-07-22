@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   darkTheme: boolean = false;
+
+  faGooglePlusG = faGooglePlusG;
+  faInstagram = faInstagram
+  faFacebook = faFacebook;
+  faYoutube = faYoutube;
+  faSpotify = faSpotify;
+  faApple = faApple;
+  faGooglePlay = faGooglePlay;
+  
   schema = {
     "@context": "http://schema.org",
     "@id": "kg:/g/11df0pfn6m",
