@@ -65,7 +65,9 @@ export class AppComponent {
     }
   };
 
-  constructor(private overlayContainer: OverlayContainer) { }
+  constructor(private overlayContainer: OverlayContainer) { 
+    this.setTheme();
+  }
   setTheme() {
     if (!this.isDarktheme) {
       this.overlayContainer.getContainerElement().classList.remove('dark-theme');
