@@ -1,4 +1,4 @@
-<div [class.dark-theme]='darkTheme' fxFlexFill>
+<div [class.dark-theme]='isDarktheme' fxFlexFill>
     <ngx-json-ld [json]="schema"></ngx-json-ld>
     <mat-sidenav-container fullscreen>
         <mat-sidenav #sidenav fxLayout="column">
@@ -23,7 +23,7 @@
                     </button>
                     <span fxFlex></span>
                     <div fxShow="true" fxHide.gt-sm="true">
-                        <button mat-icon-button fxFlex="auto" (click)="darkTheme=!darkTheme">
+                        <button mat-icon-button fxFlex="auto" (click)="themeToggle()">
                             <mat-icon>format_color_fill</mat-icon>
                         </button>
                     </div>
@@ -33,10 +33,6 @@
                         <button mat-button fxFlex="auto" routerLink='media'>Media</button>
                         <button mat-button [matMenuTriggerFor]="social">Siguenos</button>
                         <mat-menu #social="matMenu">
-                            <button mat-menu-item>
-                                <mat-icon>dialpad</mat-icon>
-                                <span>Redial</span>
-                            </button>
                             <a mat-menu-item target="_blank" rel="noopener" href="//plus.google.com/108680490166455718892/posts" matTooltip="Google+"
                                 alt="Google+ Servicentro">
                                 <fa-icon class="mat-icon" [icon]="faGooglePlusG"></fa-icon>
@@ -70,7 +66,7 @@
                                 <span>Google Play</span>
                             </a>
                         </mat-menu>
-                        <button mat-icon-button fxFlex="auto" (click)="darkTheme=!darkTheme" aria-label="tema" matTooltip="Tema">
+                        <button mat-icon-button fxFlex="auto" (click)="themeToggle()" aria-label="tema" matTooltip="Tema">
                             <mat-icon>format_color_fill</mat-icon>
                         </button>
                     </div>

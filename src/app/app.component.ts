@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { OverlayContainer } from '../../node_modules/@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, 
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  darkTheme: boolean = false;
+  isDarktheme: boolean = true;
 
   faGooglePlusG = faGooglePlusG;
   faInstagram = faInstagram
@@ -16,7 +17,7 @@ export class AppComponent {
   faSpotify = faSpotify;
   faApple = faApple;
   faGooglePlay = faGooglePlay;
-  
+
   schema = {
     "@context": "http://schema.org",
     "@id": "kg:/g/11df0pfn6m",
@@ -63,4 +64,17 @@ export class AppComponent {
       }
     }
   };
+
+  constructor(private overlayContainer: OverlayContainer) { }
+  setTheme() {
+    if (!this.isDarktheme) {
+      this.overlayContainer.getContainerElement().classList.remove('dark-theme');
+    } else {
+      this.overlayContainer.getContainerElement().classList.add('dark-theme');
+    }
+  }
+  themeToggle() {
+    this.isDarktheme = !this.isDarktheme;
+    this.setTheme();
+  }
 }
