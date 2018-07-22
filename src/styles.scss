@@ -9,6 +9,12 @@
 
 @import './themes/theme.scss';
 
+$custom-typography: mat-typography-config(
+  $body-1: mat-typography-level(16px, 28px, 400)
+);
+
+@include mat-base-typography($custom-typography);
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -16,6 +22,27 @@
 
 .dark-theme {
     @include angular-material-theme($servicentro-dark-theme);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto'), local('Roboto'), url('assets/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto'), url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto'), local('Roboto'), url('assets/fonts/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -58,4 +85,8 @@ mat-card {
 
 [m-5] {
     margin: 5px
+}
+
+[m-35] {
+    margin: 35px
 }

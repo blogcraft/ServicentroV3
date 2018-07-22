@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule } from '@angular/material';
+import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule, MatListModule } from '@angular/material';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgxJsonLdModule } from 'ngx-json-ld';
@@ -58,6 +58,8 @@ import { BiografiaComponent } from './biografia/biografia.component';
     HttpClientModule,
     NgxJsonLdModule,
     MatTabsModule,
+    MatMenuModule,
+    MatListModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     AppRoutingModule
   ],
