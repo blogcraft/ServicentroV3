@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { OverlayContainer } from '../../node_modules/@angular/cdk/overlay';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { SwUpdate } from '@angular/service-worker';
+
 
 @Component({
   selector: 'app-root',
@@ -65,7 +67,10 @@ export class AppComponent {
     }
   };
 
-  constructor(private overlayContainer: OverlayContainer) { 
+  constructor(private overlayContainer: OverlayContainer, updates: SwUpdate) { 
+    updates.available.subscribe(event => {
+      updates.activateUpdate().then(() => document.location.reload());
+    });
     this.setTheme();
   }
   setTheme() {

@@ -23,6 +23,7 @@
     "@angular/material": "^6.3.3",
     "@angular/platform-browser": "6.0.9",
     "@angular/platform-browser-dynamic": "6.0.9",
+    "@angular/pwa": "^0.7.0",
     "@angular/router": "6.0.9",
     "@angular/service-worker": "6.0.9",
     "@fortawesome/angular-fontawesome": "^0.1.1",
