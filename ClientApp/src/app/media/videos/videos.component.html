@@ -5,8 +5,9 @@
                 <mat-card-title>{{video.nombre}}</mat-card-title>
                 <mat-card-subtitle>{{video.sub}}</mat-card-subtitle>
             </mat-card-header>
-            <iframe mat-card-image m-5 mb-20 height="300px" fxFlex.gt-sm="calc(50% - 10px)" [src]="getURL(video.youtubeId) | safe"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div mat-card-image m-5 mb-20 class="video-container">
+                <iframe [src]="getURL(video.youtubeId) | safe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </mat-card>
     </div>
 

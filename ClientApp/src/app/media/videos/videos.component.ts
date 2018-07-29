@@ -14,6 +14,7 @@ export class SafePipe implements PipeTransform {
 @Component({
     selector: 'app-videos',
     templateUrl: './videos.component.html',
+    styleUrls: ['./videos.component.css'],
     providers: [MediaService]
 })
 export class VideosComponent implements OnInit {
@@ -27,7 +28,7 @@ export class VideosComponent implements OnInit {
         });
     }
 
-    getURL(id){
+    getURL(id) {
         return `https://www.youtube.com/embed/${id}?rel=0&controls=2&showinfo=0&modestbranding=0&cc_load_policy=1`
     }
 }
