@@ -24,8 +24,6 @@ $custom-typography: mat-typography-config(
     @include angular-material-theme($servicentro-dark-theme);
 }
 
-
-
 @font-face {
     font-family: 'Magneto';
     font-style: normal;
@@ -50,6 +48,16 @@ mat-card {
     --Pavimento: 10, 11, 5;
     --AmarilloCamino: 179, 117, 13;
     --Tierra: 40, 31, 16;
+}
+
+.mat-card-header-text {
+    overflow: hidden;
+}
+
+.mat-card-title {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 [mr-10] {

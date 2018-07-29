@@ -7,6 +7,7 @@ import { Galeria } from '../galeria';
 @Component({
     selector: 'app-galeria',
     templateUrl: './galeria.component.html',
+    styleUrls: ['./galeria.component.css'],
     providers: [MediaService]
 })
 export class GaleriaComponent implements OnInit {
