@@ -40,5 +40,14 @@ section {
 }
 
 .mat-list-item-focus {
-    background-color: inherit !important;
+    background: inherit !important;
 }
+
+.active-link {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark-theme .active-link {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+

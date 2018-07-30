@@ -8,6 +8,8 @@ export class UpdateService {
     constructor(private swUpdate: SwUpdate, private snackbar: MatSnackBar) {
         if (!this.swUpdate.isEnabled) {
             console.log('Nope 🙁');
+        } else {
+            console.log('Yeah 😎');
         }
 
         this.swUpdate.available.subscribe(evt => {
