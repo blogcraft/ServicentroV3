@@ -11,10 +11,31 @@ $custom-typography: mat-typography-config( $body-1: mat-typography-level(16px, 2
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($servicentro-light-theme);
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.26);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+@include angular-material-theme($servicentro-light-theme);
 .dark-theme {
     @include angular-material-theme($servicentro-dark-theme);
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.26);
+        border-radius: 2px;
+    }
+        ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4) !important;
+    }
 }
 
 @font-face {
