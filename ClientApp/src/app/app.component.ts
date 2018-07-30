@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { SwUpdate } from '@angular/service-worker';
 
+import { UpdateService } from './update.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [UpdateService]
 })
 export class AppComponent {
   isDarktheme: boolean = true;
@@ -67,10 +68,7 @@ export class AppComponent {
     }
   };
 
-  constructor(private overlayContainer: OverlayContainer, updates: SwUpdate) { 
-    updates.available.subscribe(event => {
-      updates.activateUpdate().then(() => document.location.reload());
-    });
+  constructor(private overlayContainer: OverlayContainer, private update: UpdateService) {
     this.setTheme();
   }
   setTheme() {

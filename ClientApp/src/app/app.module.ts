@@ -6,7 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule, MatListModule } from '@angular/material';
+import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule, MatListModule, MatSnackBarModule } from '@angular/material';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { NgxJsonLdModule } from 'ngx-json-ld';
@@ -63,6 +63,7 @@ import { BiografiaComponent } from './biografia/biografia.component';
     MatTabsModule,
     MatMenuModule,
     MatListModule,
+    MatSnackBarModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     AppRoutingModule
   ],
