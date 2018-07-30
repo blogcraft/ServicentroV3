@@ -38,3 +38,7 @@ section {
     font-size: 24px;
     text-align: center;
 }
+
+.mat-list-item-focus {
+    background-color: inherit !important;
+}
