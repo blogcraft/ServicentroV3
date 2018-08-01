@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
-using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -44,17 +43,7 @@ namespace servicentro_v3
             }
 
             app.UseHttpsRedirection();
-
-            var provider = new FileExtensionContentTypeProvider();
-            provider.Mappings[".json"] = "application/json";
-            provider.Mappings[".webp"] = "image/webp";
-            provider.Mappings[".jp2"] = "image/jp2";
-            provider.Mappings[".jxr"] = "image/jxr";
-            provider.Mappings[".woff2"] = "font/woff2";
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                ContentTypeProvider = provider
-            });
+            app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
             app.UseMvc(routes =>
