@@ -13,9 +13,7 @@ export class UpdateService {
         }
 
         this.swUpdate.available.subscribe(evt => {
-            const snack = this.snackbar.open('Actualización disponible!', 'Recargar Página.', {
-                duration: 6000
-            });
+            const snack = this.snackbar.open('Actualización disponible!', 'Recargar Página.');
 
             snack
                 .onAction()
