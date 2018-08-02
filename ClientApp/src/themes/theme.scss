@@ -12,16 +12,16 @@
 
 @import 'pallete.scss';
 
-$servicentro-dark-primary: mat-palette($servicentro-black);
+$servicentro-dark-primary: mat-palette($servicentro-black, 400);
 $servicentro-dark-accent:  mat-palette($servicentro-red);
 
-$servicentro-light-primary: mat-palette($servicentro-blue);
+$servicentro-light-primary: mat-palette($servicentro-black, 300);
 $servicentro-light-accent:  mat-palette($servicentro-red);
 
 // The warn palette is optional (defaults to red).
-$servicentro-app-warn:    mat-palette($servicentro-white);
+$servicentro-light-warn:    mat-palette($servicentro-white);
+$servicentro-dark-warn:    mat-palette($servicentro-white);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$servicentro-light-theme: mat-light-theme($servicentro-light-primary, $servicentro-light-accent, $servicentro-app-warn);
-$servicentro-dark-theme: mat-dark-theme($servicentro-dark-primary, $servicentro-dark-accent, $servicentro-app-warn);
-
+$servicentro-light-theme: mat-light-theme($servicentro-light-primary, $servicentro-light-accent, $servicentro-light-warn);
+$servicentro-dark-theme: mat-dark-theme($servicentro-dark-primary, $servicentro-dark-accent, $servicentro-dark-warn);
