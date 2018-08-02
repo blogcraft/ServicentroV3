@@ -13,7 +13,7 @@
 @import 'pallete.scss';
 
 $servicentro-dark-primary: mat-palette($servicentro-black);
-$servicentro-dark-accent:  mat-palette($servicentro-red, A200, A100, A400);
+$servicentro-dark-accent:  mat-palette($servicentro-red);
 
 $servicentro-light-primary: mat-palette($servicentro-blue);
 $servicentro-light-accent:  mat-palette($servicentro-red);
