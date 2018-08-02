@@ -65,6 +65,10 @@ $custom-typography: mat-typography-config( $body-1: mat-typography-level(16px, 2
     src: local('CaptureIt'), local('CaptureIt'), url('assets/fonts/captureIt.ttf') format('truetype');
 }
 
+p {
+    text-align: justify;
+}
+
 mat-card {
     margin-bottom: 20px;
 }
