@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "2018VisitaPapaNoche",
-        "descripcion": "Cena Volunatios Visita Potatoe Francisco",
+        "descripcion": "Cena Volunatios Visita Papa Francisco",
         "ano": 2018,
         "mes": 1,
         "ciudad": "Santiago",
@@ -24,7 +24,7 @@
     {
         "id": 2,
         "nombre": "2018SantuarioPadreHurtado",
-        "descripcion": "Visita Potatoe Francisco",
+        "descripcion": "Visita Papa Francisco",
         "ano": 2018,
         "mes": 1,
         "ciudad": "Santuario Padre Hurtado",
@@ -182,7 +182,7 @@
     {
         "id": 9,
         "nombre": "2015SanCristobalDiciembre",
-        "descripcion": "Algo de una virgen",
+        "descripcion": "Mes de María",
         "ano": 2015,
         "mes": 12,
         "ciudad": "Santiago",
