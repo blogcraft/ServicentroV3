@@ -28,9 +28,8 @@
         align-items: center;
         height: 100vh;
 
-        color: #2aaacb;
-        text-transform: uppercase;
-        font-family: -apple-system,
+        color: #ffffff;
+        font-family: Magneto, -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
         Roboto,
@@ -43,8 +42,19 @@
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
       }
 
+      @font-face {
+        font-family: 'Magneto';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Magneto'), local('Magneto'), url('assets/fonts/magnetob.svg') format('svg'), url('assets/fonts/magnetob.woff') format('woff'), url('assets/fonts/magnetob.ttf') format('truetype');
+      }
+
+      .rojo {
+        color: #f32927
+      }
+
       body {
-        background: #222;
+        background: #262626;
         margin: 0;
         padding: 0;
       }
@@ -70,10 +80,10 @@
         animation-delay: 1s;
       }
     </style>
-    Loading
-    <span class="d">.</span>
-    <span class="d d-2">.</span>
-    <span class="d d-3">.</span>
+    Cargando
+    <span class="d rojo">.</span>
+    <span class="d rojo d-2">.</span>
+    <span class="d rojo d-3">.</span>
     <noscript>
       <h3>🤕 Disculpa, pero requerimos que actives de alguna manera algo llamado javascript en tu dispositivo...</h3>
     </noscript>
