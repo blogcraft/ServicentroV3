@@ -1,0 +1,134 @@
+.logo-rojo {
+    color: rgb(var(--RojoServicentro));
+}
+
+.titulo2 {
+    font-family: 'Magneto';
+    color: white;
+    position: fixed;
+    left: 3vw;
+    font-size: 12vmin;
+    bottom: 140px;
+    width: 0;
+    height: 0;
+    text-shadow: 2px 2px 20px black;
+    z-index: 1;
+}
+
+@media (max-width: 599px) {
+    .cb-slideshow,
+    .cb-slideshow:after {
+        position: absolute;
+        top: 96px;
+        left: 0px;
+        bottom: 40px;
+        right: 0;
+        list-style: none;
+    }
+    }
+@media (min-width: 600px) {
+    .cb-slideshow,
+    .cb-slideshow:after {
+        position: absolute;
+        top: 112px;
+        left: 0px;
+        bottom: 48px;
+        right: 0;
+        list-style: none;
+    }
+    }
+
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 72s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../../assets/img/varios/portada.jpg);
+}
+
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../../assets/img/varios/1.jpg);
+    animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../../assets/img/varios/2.jpg);
+    animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../../assets/img/varios/3.jpg);
+    animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../../assets/img/varios/4.jpg);
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../../assets/img/varios/5.jpg);
+    animation-delay: 30s;
+}
+
+.cb-slideshow li:nth-child(7) span {
+    background-image: url(../../assets/img/varios/6.jpg);
+    animation-delay: 36s;
+}
+
+.cb-slideshow li:nth-child(8) span {
+    background-image: url(../../assets/img/varios/7.jpg);
+    animation-delay: 42s;
+}
+
+.cb-slideshow li:nth-child(9) span {
+    background-image: url(../../assets/img/varios/8.jpg);
+    animation-delay: 48s;
+}
+
+.cb-slideshow li:nth-child(10) span {
+    background-image: url(../../assets/img/varios/9.jpg);
+    animation-delay: 54s;
+}
+
+.cb-slideshow li:nth-child(11) span {
+    background-image: url(../../assets/img/varios/10.jpg);
+    animation-delay: 60s;
+}
+
+.cb-slideshow li:nth-child(12) span {
+    background-image: url(../../assets/img/varios/11.jpg);
+    animation-delay: 66s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1
+    }
+    25% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
