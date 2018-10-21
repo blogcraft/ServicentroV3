@@ -9,7 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule, MatListModule, MatSnackBarModule } from '@angular/material';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NgxJsonLdModule } from 'ngx-json-ld';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
