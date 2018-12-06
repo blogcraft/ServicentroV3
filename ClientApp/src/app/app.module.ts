@@ -65,6 +65,7 @@ import { BiografiaComponent } from './biografia/biografia.component';
     MatListModule,
     MatSnackBarModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     AppRoutingModule
   ],
   entryComponents: [DialogFoto],
