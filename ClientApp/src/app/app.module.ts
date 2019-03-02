@@ -72,8 +72,4 @@ import { BiografiaComponent } from './biografia/biografia.component';
   providers: [MatIconRegistry],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(public matIconRegistry: MatIconRegistry) {
-    matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
-  }
-}
+export class AppModule { }
