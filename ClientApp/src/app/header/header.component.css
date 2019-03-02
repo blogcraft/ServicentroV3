@@ -1,0 +1,13 @@
+.titulo {
+    font-weight: 300;
+    margin: 0;
+    padding: 28px 8px;
+    font-size: 20px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+mat-toolbar {
+    margin-bottom: 20px;
+}

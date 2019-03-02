@@ -1,0 +1,53 @@
+.gradient {
+    background: linear-gradient(#03455f, #155872, #306a80, #487787, #718c93, #9d9181) !important;
+}
+
+.titulo {
+    font-family: 'Magneto';
+    font-size: 20px;
+}
+
+.p-1{
+    padding: 1rem;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.ruedita {
+    background-color: #222;
+    border-radius: 100%;
+    color: #fff;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0 .2rem 0 .2rem;
+}
+
+.logo-rojo {
+    color: rgb(var(--RojoServicentro));
+}
+mat-sidenav-content{
+    display: flex;
+    flex-direction: column;
+}
+section {
+    flex-grow: 1;
+}
+
+.mat-icon {
+    font-size: 24px;
+    text-align: center;
+}
+
+.mat-list-item-focus {
+    background: inherit !important;
+}
+
+.active-link {
+    background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark-theme .active-link {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+

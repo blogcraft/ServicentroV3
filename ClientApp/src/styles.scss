@@ -1,0 +1,112 @@
+@import '~normalize.css/normalize.css';
+@import '~@angular/material/_theming.scss';
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+@import './themes/theme.scss';
+$custom-typography: mat-typography-config( $body-1: mat-typography-level(16px, 28px, 400));
+@include mat-base-typography($custom-typography);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.26);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+@include angular-material-theme($servicentro-light-theme);
+.dark-theme {
+    @include angular-material-theme($servicentro-dark-theme);
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.26);
+        border-radius: 2px;
+    }
+        ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4) !important;
+    }
+
+    /*.mat-elevation-z24 {
+        box-shadow: 0px 11px 15px -7px rgba(255, 255, 255, 0.2), 0px 24px 38px 3px rgba(255, 255, 255, 0.14), 0px 9px 46px 8px rgba(255, 255, 255, 0.12);
+    }
+    
+    .mat-card:not([class*=mat-elevation-z]) {
+        box-shadow: 0 3px 1px -2px rgba(255,255,255,.2), 0 2px 2px 0 rgba(255,255,255,.14), 0 1px 5px 0 rgba(255,255,255,.12);
+    }
+    
+    .mat-elevation-z5 {
+        box-shadow: 0px 3px 5px -1px rgba(255, 255, 255, 0.2), 0px 5px 8px 0px rgba(255, 255, 255, 0.14), 0px 1px 14px 0px rgba(255, 255, 255, 0.12);
+    }*/
+    
+}
+
+@font-face {
+    font-family: 'Magneto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Magneto'), local('Magneto'), url('assets/fonts/magnetob.svg') format('svg'), url('assets/fonts/magnetob.woff') format('woff'), url('assets/fonts/magnetob.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CaptureIt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('CaptureIt'), local('CaptureIt'), url('assets/fonts/captureIt.ttf') format('truetype');
+}
+
+p {
+    text-align: justify;
+}
+
+mat-card {
+    margin-bottom: 20px;
+}
+
+:root {
+    --RojoServicentro: 243, 41, 39;
+    --AzulServicentro: 47, 43, 119;
+    --Pavimento: 10, 11, 5;
+    --AmarilloCamino: 179, 117, 13;
+    --Tierra: 40, 31, 16;
+}
+
+.mat-card-header-text {
+    overflow: hidden;
+}
+
+.mat-card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+[mr-10] {
+    margin-right: 10px;
+}
+
+[mb-20] {
+    margin-bottom: 20px;
+}
+
+[m-10] {
+    margin: 10px;
+}
+
+[m-5] {
+    margin: 5px
+}
+
+[m-35] {
+    margin: 35px
+}

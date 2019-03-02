@@ -1,6 +1,0 @@
-<app-header *ngIf="galeria" [nombre]="galeria.ano + ' - ' + galeria.descripcion"></app-header>
-<mat-grid-list cols="4" *ngIf="galeria">
-    <mat-grid-tile *ngFor="let foto of galeria.fotos">
-        <img (click)="openDialog(foto)" src='assets/img/galerias/{{galeria.nombre}}/{{foto}}' class="adjust">
-    </mat-grid-tile>
-</mat-grid-list>
