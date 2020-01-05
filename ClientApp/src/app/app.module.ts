@@ -64,7 +64,7 @@ import { BiografiaComponent } from './biografia/biografia.component';
     MatMenuModule,
     MatListModule,
     MatSnackBarModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     AppRoutingModule
   ],

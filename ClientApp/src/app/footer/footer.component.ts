@@ -1,5 +1,8 @@
-import { Component } from "@angular/core";
-import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay, faCreativeCommons, faCreativeCommonsBy, faCreativeCommonsNc, faCreativeCommonsNd } from '@fortawesome/free-brands-svg-icons';
+import { Component } from '@angular/core';
+import {
+    faSoundcloud, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay,
+    faCreativeCommons, faCreativeCommonsBy, faCreativeCommonsNc, faCreativeCommonsNd
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
     selector: 'app-footer',
@@ -7,8 +10,8 @@ import { faGooglePlusG, faInstagram, faFacebook, faYoutube, faSpotify, faApple, 
     styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-    faGooglePlusG = faGooglePlusG;
-    faInstagram = faInstagram
+    faSoundcloud = faSoundcloud;
+    faInstagram = faInstagram;
     faFacebook = faFacebook;
     faYoutube = faYoutube;
     faSpotify = faSpotify;
@@ -16,6 +19,6 @@ export class FooterComponent {
     faGooglePlay = faGooglePlay;
     faCreativeCommons = faCreativeCommons;
     faCreativeCommonsBy = faCreativeCommonsBy;
-    faCreativeCommonsNc = faCreativeCommonsNc; 
+    faCreativeCommonsNc = faCreativeCommonsNc;
     faCreativeCommonsNd = faCreativeCommonsNd;
 }
