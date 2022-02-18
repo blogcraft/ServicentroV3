@@ -6,6 +6,8 @@
 trigger:
 - master
 
+pr: none
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -29,9 +31,9 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
     
-- task: AzureWebApp@1
+- task: PublishBuildArtifacts@1
+  condition: and(succeeded(), not(eq('$(Build.SourceBranchName)', 'develop')))
   inputs:
-    azureSubscription: 'ResourceConnectionAServicentro'
-    appType: webApp
-    appName: 'servicentro'
-    Package: '$(System.ArtifactsDirectory)/**/*.zip'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: '$(Build.SourceBranchName)'
+    publishLocation: 'Container'
