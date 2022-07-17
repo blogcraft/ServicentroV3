@@ -80,7 +80,6 @@ import { BiografiaComponent } from './biografia/biografia.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     AppRoutingModule
   ],
-  entryComponents: [DialogFoto],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
