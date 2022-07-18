@@ -21,7 +21,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+// import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
@@ -71,7 +71,7 @@ import { BiografiaComponent } from './biografia/biografia.component';
     MatExpansionModule,
     MatDialogModule,
     HttpClientModule,
-    NgxJsonLdModule,
+    // NgxJsonLdModule,
     MatTabsModule,
     MatMenuModule,
     MatListModule,
