@@ -6,10 +6,22 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { MatIconModule, MatIconRegistry, MatExpansionModule, MatDialogModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatButtonModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule, MatListModule, MatSnackBarModule } from '@angular/material';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+// import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
@@ -59,7 +71,7 @@ import { BiografiaComponent } from './biografia/biografia.component';
     MatExpansionModule,
     MatDialogModule,
     HttpClientModule,
-    NgxJsonLdModule,
+    // NgxJsonLdModule,
     MatTabsModule,
     MatMenuModule,
     MatListModule,
@@ -68,8 +80,6 @@ import { BiografiaComponent } from './biografia/biografia.component';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     AppRoutingModule
   ],
-  entryComponents: [DialogFoto],
-  providers: [MatIconRegistry],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
