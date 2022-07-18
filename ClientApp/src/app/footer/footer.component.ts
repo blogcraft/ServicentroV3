@@ -21,4 +21,6 @@ export class FooterComponent {
     faCreativeCommonsBy = faCreativeCommonsBy;
     faCreativeCommonsNc = faCreativeCommonsNc;
     faCreativeCommonsNd = faCreativeCommonsNd;
+
+    anio = new Date().getFullYear();
 }

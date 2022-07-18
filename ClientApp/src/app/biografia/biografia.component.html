@@ -3,24 +3,56 @@
     <mat-tab label="Biografía">
         <div m-35 fxLayout="column" fxLayoutAlign="center" fxLayoutGap="50px">
             <section>
-                <p>Servicentro es una banda de rock-pop Chileno originaria de Santiago, conformada en agosto de 2011.</p>
-                <p>Además de tener la oportunidad de presentarse en diversos escenarios dentro de Santiago, durante el año 2014 fueron invitados a tocar al festival Hallel Franca celebrado durante septiembre en Brasil. Así mismo fueron invitados a tocar en el Festival Hallel Temuco celebrado en diciembre del mismo año.</p>
-                <p>El 16 de enero del 2018 y compartieron escenario junto con otros artistas como Américo, Gloria Simonetti, Yamna Lobos y Juan Pablo Queraltó en el Frontis del Santuario del Padre Hurtado para la visita del Papa Francisco a Chile en el cual lanzaron el sencillo Construyamos Esperanza como uno de los temas oficiales de la visita.</p>
-                <p>Coni Castro y Edo Rigall se conocieron durante los años 90 en el coro de la iglesia. Muchos años después, a finales del 2010, se reencuentran en un contexto similar, ella como directora coral y el como músico invitado. A poco andar deciden experimentar con otros sonidos, Coni propone hacer una banda de rock y Edo pone sobre la mesa un antiguo proyecto que tenía bien guardado. Así comienza a fraguarse Servicentro. En agosto del 2011, para el primer ensayo de la banda se recluta a Rafael Cereceda como baterista, Daniela Pozo en coros y a Kico Recart en la primera guitarra, formación que se mantiene hasta principios del 2016, cuando Kico es sucedido por Mauro Pinto, con quien graban su primer y único disco a la fecha, "Kilómetro 1", el cual fue lanzado el 1 de mayo del 2017.</p>
-                <p>En 2018 se incorporan Sebastián Viu como guitarrista, Daniel Vicentini en los teclados y Pilar Quezada en las voces.</p>
+                <p>Servicentro es una banda de rock-pop nacida en Santiago de Chile en agosto
+                    de 2011, que por más de 10 años se ha presentado en diversos escenarios del
+                    país. En septiembre del 2014 se presentaron en el encuentro de música y
+                    oración Hallel en la ciudad de Franca, Brasil.</p>
+                <p>En mayo del 2017 se lanza el primer disco de la agrupación titulado “kilómetro
+                    1”, con 8 temas originales y un cover.</p>
+                <p>En Enero del 2018, durante la visita del Papa Francisco a Chile, la banda se
+                    presenta en el Frontis del Santuario del Padre Hurtado frente a 5.000 personas
+                    que esperan la llegada del Sumo Pontífice, por esos días lanzan el sencillo
+                    “Construyamos Esperanza” que forma parte del set list oficial de la visita.</p>
+                <p>Coni Castro y Edo Rigall se conocieron durante los años 90 en el coro de la
+                    iglesia. Muchos años después se reencuentran y deciden experimentar con
+                    otros sonidos, Coni propone hacer una banda de rock y Edo pone sobre la
+                    mesa un antiguo proyecto; así comienza a fraguarse Servicentro. En agosto del
+                    2011, para el primer ensayo de la banda se recluta a Rafael Cereceda como
+                    baterista, Daniela Pozo en coros y a Kico Recart en la primera guitarra,
+                    formación que se mantiene hasta principios del 2016, cuando Kico es sucedido
+                    por Mauro Pinto, con quien graban el disco &quot;Kilómetro 1&quot;.</p>
+                <p>En 2018 se suman Pilar Quezada en voces, Sebastián Viu en guitarra y Daniel
+                    Vicentini en los teclados, quien acompaña a la banda en varias presentaciones
+                    para luego retirarse a trabajar en proyectos personales.</p>
             </section>
         </div>
     </mat-tab>
     <mat-tab label="Miembros">
-        <div m-35 fxLayout="column" fxLayoutAlign="center" fxLayoutGap="50px">
-            <section>
-                <p>Coni Castro: Primera voz y guitarras</p>
-                <p>Dani Pozo: Voces y teclado</p>
-                <p>Rafa Cereceda: Batería</p>
-                <p>Mauro Pinto: Guitarras</p>
-                <p>Seba Viu: Guitarras</p>
-                <p>Edo Rigall: Bajo</p>
-            </section>
-        </div>
+        <section>
+            <div m-35 fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutGap="10px">
+                <div fxLayout="row" *ngFor="let bio of bios">
+                    <mat-card fxFlex class="example-card">
+                        <mat-card-header>
+                            <img mat-card-avatar src="assets/img/bios/{{bio.imgUrl}}.jpg" alt="{{bio.nombre}}">
+                            <mat-card-title>{{bio.nombre}} ({{bio.apodos}})</mat-card-title>
+                            <mat-card-subtitle>{{bio.roles}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <blockquote >
+                                <p>{{bio.fracesTipocas}}</p>
+                                <cite>{{bio.nombre}}</cite>
+                            </blockquote>
+
+                            <div>Regalo Útil: {{bio.regalo}}</div>
+                            <div>Lo Que Nunca Se Vio: {{bio.lqnsv}}</div>
+                            <div>Sueño Frustrado: {{bio.sf}}</div>
+                            <div>Se Le Puede Ver: {{bio.slpv}}</div>
+                        </mat-card-content>
+                        <mat-card-actions>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </section>
     </mat-tab>
 </mat-tab-group>

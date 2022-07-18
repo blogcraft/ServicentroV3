@@ -1,0 +1,79 @@
+[
+    {
+        "nombre": "Eduardo Rigall",
+        "imgUrl": "ed",
+        "roles": ["Voz", "bajo"],
+        "apodos": ["Edo", "Pelao"],
+        "fracesTipocas": "“Eh…. No.”, “Fitipaldi”, “👀”",
+        "regalo": "Un telepronter para que no se le olviden las letras",
+        "lqnsv": "A Edo tranquilo en un avión",
+        "sf": "Hablar más fuerte",
+        "slpv": ["Coordinando cosas", "Electrocutándose con los micrófonos"]
+    },
+    {
+        "nombre": "Rafael Cereceda",
+        "imgUrl": "ra",
+        "roles": ["Batería"],
+        "apodos": ["Rafa", "Rafón"],
+        "fracesTipocas": "“Me estai web#%&”, “Puntualidad por favor”",
+        "regalo": "Una batería que se arme sola en 2 minutos",
+        "lqnsv": "Tocando la batería despacio",
+        "sf": "Salir en las fotos de las tocatas, tener buen retorno de las voces",
+        "slpv": ["Buscando enchufes para conectar todo su despliegue tecnológico"]
+    },
+    {
+        "nombre": "Daniela Pozo",
+        "imgUrl": "da",
+        "roles": ["Voz"],
+        "apodos": ["Dani", "Pozito"],
+        "fracesTipocas": "“Es mi delay natural”, “Voy saliendo chiquillos”",
+        "regalo": "Un trapero portátil",
+        "lqnsv": "A la Dani con una mala actitud",
+        "sf": "Que sus días tengan 35 horas",
+        "slpv": ["Pidiendo un pisco sour", "Revisando los torpedos de las voces"]
+    },
+    {
+        "nombre": "Constanza Castro",
+        "imgUrl": "co",
+        "roles": ["Voz", "Guitarra"],
+        "apodos": ["Coni", "Coty", "Cono"],
+        "fracesTipocas": "“Perdón”, “Pero no entendí”, “Holiiii”",
+        "regalo": "Ritalin, seleccionador de fotos perfectas",
+        "lqnsv": "A la Coni de acuerdo con todo",
+        "sf": "Tener buena memoria",
+        "slpv": ["Respondiendo los whatsapps con stickers perfectos para cada ocasión", "Riéndose de todas las tallas"]
+    },
+    {
+        "nombre": "Sebastián Viu",
+        "imgUrl": "se",
+        "roles": ["Guitarra"],
+        "apodos": ["Seba"],
+        "fracesTipocas": "“Llegué! Ustedes dónde están?”",
+        "regalo": "Pedal board de 3 pisos",
+        "lqnsv": "Al Seba sin plan B",
+        "sf": "Que lo auspicie Fender",
+        "slpv": ["Súper motivado, ordenando los cables de manera perfecta"]
+    },
+    {
+        "nombre": "Pilar Quezada",
+        "imgUrl": "pi",
+        "roles": ["Voz"],
+        "apodos": ["Pili", "Pililili", "Pi"],
+        "fracesTipocas": "“Tengo que ir a ver a mis gatos”, “Oh sh#$%”, “Ya, pero mi pregunta es…”",
+        "regalo": "Retorno que funcione siempre, Salbutamol para los ataques de risa.",
+        "lqnsv": "A la Pili sin maquillaje",
+        "sf": "Ser más alta",
+        "slpv": ["Maquillandolos a todos, de rodie armando la batería, pidiendo sangría."]
+    },
+    {
+        "nombre": "Mauricio Pinto Basso",
+        "imgUrl": "ma",
+        "roles": ["Guitarra"],
+        "apodos": ["Mauro", "Mauri", "Chico"],
+        "fracesTipocas": "“+1”, “Oye y si hacemos esto? (en alguna parte de una canción)”",
+        "regalo": "Amplificador fácil de transportar, milkyway vitalicio",
+        "lqnsv": "A Mauro sin tirar algún comentario chistoso (pero con cara de serio)",
+        "sf": "Haber conocido a los Beatles, que los deliverys lleguen a su casa",
+        "slpv": ["Haciéndose bullying a si mismo por su altura"]
+    }
+]
