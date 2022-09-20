@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {
-    faSoundcloud, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay,
+    faSoundcloud, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay, faTiktok,
     faCreativeCommons, faCreativeCommonsBy, faCreativeCommonsNc, faCreativeCommonsNd
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,6 +17,7 @@ export class FooterComponent {
     faSpotify = faSpotify;
     faApple = faApple;
     faGooglePlay = faGooglePlay;
+    faTiktok = faTiktok;
     faCreativeCommons = faCreativeCommons;
     faCreativeCommonsBy = faCreativeCommonsBy;
     faCreativeCommonsNc = faCreativeCommonsNc;

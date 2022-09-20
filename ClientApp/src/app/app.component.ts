@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faSoundcloud, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faSoundcloud, faInstagram, faFacebook, faYoutube, faSpotify, faApple, faGooglePlay, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 import { UpdateService } from './update.service';
@@ -20,6 +20,7 @@ export class AppComponent {
   faSpotify = faSpotify;
   faApple = faApple;
   faGooglePlay = faGooglePlay;
+  faTiktok = faTiktok;
 
   schema = {
     '@context': 'http://schema.org',
