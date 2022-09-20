@@ -45,7 +45,7 @@ img {
  blockquote {
      position: relative;
      /* font-family: 'Barlow Condensed', sans-serif; */
-     max-width: 300px;
+     /* max-width: 300px; */
      margin: 20px auto;
      align-self: center;
  }
@@ -69,10 +69,10 @@ img {
      position: absolute;
      border: 2px solid #e74848;
      border-radius: 0 50px 0 0;
-     width: 25px;
-     height: 25px;
-     bottom: -27px;
-     left: 50px;
+     width: 40px;
+     height: 40px;
+     bottom: -42px;
+     left: 17px;
      border-bottom: none;
      border-left: none;
      z-index: 3; 
@@ -81,9 +81,9 @@ img {
  blockquote cite:before {
     content:"";
     position: absolute;
-    width: 28px;
-    bottom: 22px;
-    left: -28px;
+    width: 31px;
+    bottom: 74px;
+    left: -61px;
     z-index: 2;
 }
 

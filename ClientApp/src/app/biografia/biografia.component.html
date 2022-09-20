@@ -32,20 +32,22 @@
             <div m-35 fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutGap="10px">
                 <div fxLayout="row" *ngFor="let bio of bios">
                     <mat-card fxFlex class="example-card">
-                        <mat-card-header>
-                            <img mat-card-avatar src="assets/img/bios/{{bio.imgUrl}}.jpg" alt="{{bio.nombre}}">
-                            <mat-card-title>{{bio.nombre}}</mat-card-title>
-                            <mat-card-subtitle>{{bio.roles}}</mat-card-subtitle>
-                        </mat-card-header>
+                        <blockquote>
+                            <p>{{bio.fracesTipocas}}</p>
+                            <cite fxLayout="row">
+                                <img mat-card-avatar src="assets/img/bios/{{bio.imgUrl}}.jpg" alt="{{bio.nombre}}">
+                                <div fxLayout="column" fxLayoutAlign="space-around stretch">
+                                    <h2 fxFlex style="margin: 0 0 0 10px;">{{bio.nombre}}</h2>
+                                    <small fxFlex style="margin: 0 0 0 10px;">{{bio.roles}}</small>
+                                </div>
+                            </cite>
+                        </blockquote>
                         <mat-card-content>
-                            <blockquote>
-                                <p>{{bio.fracesTipocas}}</p>
-                                <cite>{{bio.nombre}}</cite>
-                            </blockquote>
 
                             <div><span class="mat-h3" matTooltip="Sobre Nombre">S.N.</span>: {{bio.apodos}}</div>
                             <div><span class="mat-h3" matTooltip="Regalo Útil">R.U.</span>: {{bio.regalo}}</div>
-                            <div><span class="mat-h3" matTooltip="Lo Que Nunca Se Vio">L.Q.N.S.V.</span>: {{bio.lqnsv}}</div>
+                            <div><span class="mat-h3" matTooltip="Lo Que Nunca Se Vio">L.Q.N.S.V.</span>: {{bio.lqnsv}}
+                            </div>
                             <div><span class="mat-h3" matTooltip="Sueño Frustrado">S.F.</span>: {{bio.sf}}</div>
                             <div><span class="mat-h3" matTooltip="Se Le Puede Ver">S.L.P.V.</span>: {{bio.slpv}}</div>
                         </mat-card-content>
