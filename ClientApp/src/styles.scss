@@ -8,6 +8,8 @@
 @include mat.core();
 @import './themes/theme.scss';
 $custom-typography: mat.define-typography-config( $body-1: mat.define-typography-level(16px, 28px, 400));
+$primary-dark: mat-get-color-from-palette($servicentro-dark-theme);
+$primary-light: mat-get-color-from-palette($servicentro-light-theme);
 @include mat.typography-hierarchy($custom-typography);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -26,7 +28,19 @@ $custom-typography: mat.define-typography-config( $body-1: mat.define-typography
     background: rgba(0, 0, 0, 0.4);
 }
 
+@mixin background-color($color) {
+    border: 6px solid $color !important;
+}
+
 @include mat.all-component-themes($servicentro-light-theme);
+blockquote cite:before {
+    @include background-color(#ffffff);
+}
+
+.dark-theme * blockquote cite:before {
+    @include background-color(#424242);
+}
+
 .dark-theme {
     @include mat.all-component-themes($servicentro-dark-theme);
 

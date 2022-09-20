@@ -78,9 +78,18 @@ img {
      z-index: 3; 
  }
 
+ blockquote cite:before {
+    content:"";
+    position: absolute;
+    width: 28px;
+    bottom: 22px;
+    left: -28px;
+    z-index: 2;
+}
+
  blockquote cite {
     position: relative !important;
-    color: #ffffff;
+    /* color: #ffffff; */
     line-height: 1.2;
     margin: 0;
     padding-top: 15px;
